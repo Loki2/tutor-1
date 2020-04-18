@@ -1,0 +1,220 @@
+/* 
+***************SIDEBAR***************************
+ */
+
+.sidebar {
+    width: 275px;
+}
+
+.sidebar .logo {
+    padding: 25px 45px;
+}
+.sidebar .logo img {
+    height: 45px;
+}
+
+.sidebar .nav{
+    padding: 25px 25px;
+}
+.sidebar .nav li{
+    list-style: none;
+ }
+.sidebar .nav li a {
+    padding: 0px 35px;
+    margin-bottom: 0px;
+    /* border-radius: 40px; */
+}
+.sidebar .nav li a .icon{
+    margin-right: 10px;
+}
+.sidebar .nav li a .lbl{
+    padding: 0px;
+    margin: 5px;
+}
+
+.sidebar .nav li a.on{
+    border-left: 2px rgb(72,148,86) solid;
+    color: rgb(72,148,86);
+    line-height: 1px;
+}
+
+
+.sidebar .nav li a:hover,
+.sidebar .nav li a:active {
+    border-left: 2px rgb(72,148,86) solid;
+    color: rgb(72,148,86);
+    line-height: 1px;
+
+
+
+
+    /* TODO: Create Click on menu */
+
+}
+
+.sidebar .updated-course {
+    padding: 0px 45px;
+    margin: 20px 0px;
+}
+.sidebar .updated-course .ico {
+    font-size: 24px;
+    padding: 15px;
+    background: #53A254;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.sidebar .updated-course .lbl {}
+.sidebar .updated-course .lbl .author {}
+
+.sidebar .stats {
+    align-items: center;
+    padding: 70px 50px;
+    padding: 0px 50px;
+    margin: 25px 0px;
+}
+.sidebar .stats .stat-box {
+    flex-direction: column;
+    width: 95px;
+}
+.sidebar .stats .stat-box .ico{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin: 0px 0px;
+}
+
+.sidebar .stats .stat-box .val{
+    margin: 0px 0px;
+}
+.sidebar .stats .stat-box .lbl{
+    margin: 0px 0px;
+}
+
+.sidebar .profile {
+    padding: 0px 45px;
+    margin: 20px 0px;
+}
+.sidebar .profile .ico {
+    font-size: 24px;
+    padding: 15px;
+    background: #53A254;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.sidebar .profile .lbl {}
+
+.sidebar .profile .user-profile {
+    border: 2px #53A254 solid;
+    background: #ddd;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 15px;
+    border-radius: 30px;
+    padding: 3px;
+}
+.sidebar .profile .user-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.app-content {
+    flex: 2;
+    padding: 20px 0px;
+}
+
+/* 
+************************Style home-page**********************
+ */
+.home-page {}
+.home-page .section {}
+.home-page .section .title{
+    margin-bottom: 10px;
+}
+.home-page .section .tutors{}
+.home-page .section .tutors .tutor {
+    border: 2px #53A254 solid;
+    background: #ddd;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 50px;
+    padding: 3px;
+}
+.home-page .section .tutors .tutor img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.home-page .section .tutors .tutor:hover {}
+
+.home-page .section-b {
+    margin-top: 50px;
+}
+.home-page .section-b .courses{}
+.home-page .section-b .courses a{
+    margin-right: 50px;
+    text-decoration: none; 
+}
+.home-page .section-b .courses .block{
+    width: 225px;
+    height: 375px;
+    background: #e2e2e2 !important;
+    border-radius: 20px;
+   
+}
+
+.home-page .section-b .courses .block .user{
+    padding: 20px;
+    z-index: 1;
+}
+.home-page .section-b .courses .block .user .pic{
+    width: 40px;
+    height: 40px;
+    border: 2px rgb(76,175,80) solid;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+}
+.home-page .section-b .courses .block .user .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.home-page .section-b .courses .block .user .meta{}
+.home-page .section-b .courses .block .user .meta .name{
+    padding: 0px;
+    margin: 0px;
+}
+.home-page .section-b .courses .block .user .meta .uname{}
+
+.home-page .section-b .courses .block .dura {
+    top: 90px;
+    left: 15px;
+    background: #53A254;
+    line-height: 1;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.33);
+}
+.home-page .section-b .courses .block .dura .dur{
+    top: 90px;
+    left: 15px;
+    color: cornsilk;
+    line-height: 1;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.home-page .section-b .courses .block .course-name {
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+    background: #2e2e2e;
+    border-radius: 10px;
+}

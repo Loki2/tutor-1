@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import Course1 from '../ui/code-1.jpg';
 
 function Home() {
-    const [popularCourse, setPopularCourse] = useState([  //setPopularCourse after PopularCourse
+    const [popularCourse] = useState([  //setPopularCourse after PopularCourse
         {
             ID: 1,
             title:"Learning how to create model in 102 min",
@@ -53,8 +53,8 @@ function Home() {
         }
     ]);
 
-    const [topTutors, setTopTutor] = ([
-         {
+    const [topTutors] = useState([ //setTopTutor After topTutors
+        {
             ID: 1,
             name: "Lanna Marelnna", 
             username:"lannamarln",
@@ -77,6 +77,30 @@ function Home() {
             name: "Lanna Marelnna", 
             username:"lannamarln",
             dp: "https://placeimg.com/100/100/people?tutors-" + 4,
+        },
+        {
+            ID: 5,
+            name: "Lanna Marelnna", 
+            username:"lannamarln",
+            dp: "https://placeimg.com/100/100/people?tutors-" + 5,
+        },
+        {
+            ID: 6,
+            name: "Lanna Marelnna", 
+            username:"lannamarln",
+            dp: "https://placeimg.com/100/100/people?tutors-" + 6,
+        },
+        {
+            ID: 7,
+            name: "Lanna Marelnna", 
+            username:"lannamarln",
+            dp: "https://placeimg.com/100/100/people?tutors-" + 7,
+        },
+        {
+            ID: 8,
+            name: "Lanna Marelnna", 
+            username:"lannamarln",
+            dp: "https://placeimg.com/100/100/people?tutors-" + 8,
         }
     ])
 
@@ -90,7 +114,6 @@ function Home() {
                 </button>
             );
         }
-
 
         /*Popular Course Of The Week*/
         const courseList = [];
@@ -127,20 +150,19 @@ function Home() {
             );
         }
 
-
         // Top tutors List
         const topTutorsList = [];
         // Loop Top Tutors List
         for(let i=0; i<topTutors.length; i++){
             topTutorsList.push(
-                <a href="/" className="user-block rel" key={"top-tutors" + i}>
-                    <div className="user aic abs flex">
+                <a href="/" className="user-block rel noul" key={"top-tutors" + i}>
+                    <div className="user aic flex">
                         <div className="pic">
                             <img src={topTutors[i].dp} className="bl" alt="profile"/>
                         </div>
                         <div className="meta rel">
-                            <h2 className="s15 name fontb cfff">{topTutors[i].name}</h2>
-                            <span className="s13 uname fontn cfff">@{topTutors[i].username}</span>
+                            <h2 className="s15 name fontb c333">{topTutors[i].name}</h2>
+                            <span className="s13 uname fontn c333">@{topTutors[i].username}</span>
                             {/* <h2 className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</h2> */}
                         </div>
                     </div>
@@ -148,21 +170,6 @@ function Home() {
                 </a>
             );
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // Render Every Loop
     return (
@@ -179,7 +186,7 @@ function Home() {
 
 
             {/* Poopular Course this Weeks*/}
-            <div className="section-b rel">
+            <div className="section section-b rel">
                 <h2 className="title s20 fontb">Popular Course<span className="fontn">This Week</span></h2>
                 <div className="courses rel flex">
                         {courseList}
@@ -188,9 +195,9 @@ function Home() {
 
 
             {/* Top Tutors*/}
-            <div className="section-c rel">
+            <div className="section section-c rel">
                 <h2 className="title s20 fontb">Top<span className="fontn">Tutors</span></h2>
-                <div className="courses rel flex">
+                <div className="top-tutors rel flex">
                        {topTutorsList}
                 </div>
             </div>

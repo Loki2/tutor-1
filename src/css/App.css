@@ -218,3 +218,35 @@
     background: #2e2e2e;
     border-radius: 10px;
 }
+.home-page .top-tutors {
+    flex-wrap: wrap;
+}
+.home-page .section .user-block{
+    margin: 0px 95px 30px 0px;
+}
+.home-page .section .user-block .pic {
+    width: 40px;
+    height: 40px;
+    border: 2px rgb(76,175,80) solid;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+}
+.home-page .section .user-block .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.home-page .section .user-block .meta{
+    margin-right: 5px;
+    padding: 0px;
+}
+.home-page .section .user-block .meta .name{
+    padding: 0px;
+    margin: 0px;
+
+}
+.home-page .section .user-block .meta .uname{
+     padding: 0px;
+    margin: 0px;
+}

@@ -131,8 +131,8 @@ function Home() {
                                         <img src={popularCourse[i].tutor.dp} className="bl" alt="profile"/>
                                     </div>
                                     <div className="meta rel">
-                                    <h2 className="s15 name fontb cfff">{popularCourse[i].tutor.name}</h2>
-                                    <span className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</span>
+                                    <h2 className="s15 name fontb c333">{popularCourse[i].tutor.name}</h2>
+                                    <span className="s13 uname fontn c333">@{popularCourse[i].tutor.username}</span>
                                     {/* <h2 className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</h2> */}
                                     </div>
                             </div>
@@ -143,7 +143,6 @@ function Home() {
                             
                             <div className="course-name abs">
                                 <a href="/" className="s13 course-text fontb cfff">{popularCourse[i].title}</a>
-                                {/* <h2 className="s13 course-text fontb cfff">{popularCourse[i].title}</h2> */}
                             </div>
                     </div>
                 </a>

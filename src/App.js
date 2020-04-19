@@ -5,6 +5,7 @@ import './css/uifont.css';
 //import Header from './screens/Header';
 import Sidebar from './screens/Sidebar';
 import Home from './screens/Home';
+import Rightbar from './screens/Rightbar';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <div className="app-content">
             <Home />
             </div>
+          <Rightbar />
         </div>
   );
 }

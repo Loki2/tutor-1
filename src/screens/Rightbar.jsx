@@ -109,17 +109,17 @@ function Rightbar() {
             
 
             <div className="section section-c rel">
-                    <h2 className="category-list s24 fontb c333">All Categories</h2>
+                    <h2 className="category-list s18 fontb c333">All Categories</h2>
                         {catsList}
             </div>
 
             <div className="section section-c rel">
-                    <h2 className="category-list s24 fontb c333">Public Source</h2>
+                    <h2 className="category-list s18 fontb c333">Public Source</h2>
                         {/* {catsList} */}
             </div>
             
             <div className="section section-c rel">
-                    <h2 className="category-list s24 fontb c333">Social Media</h2>
+                    <h2 className="category-list s18 fontb c333">Social Media</h2>
                         {/* {catsList} */}
             </div>
         </div>

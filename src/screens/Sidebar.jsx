@@ -22,8 +22,8 @@ function Sidebar() {
         navigation.push(
                 <li key={"nav-" + i + "-" + nav[i].slug}>
                     <a href={nav[i].slug} className={"aic link c12 noul flex c333" + (currentPage === nav[i].slug ? " on" : "") }>
-                        <div className={"ico s24 " + nav[i].icon} />
-                        <h2 className="lbl s20">{nav[i].lable}</h2>
+                        <div className={"ico s18 " + nav[i].icon} />
+                        <h2 className="lbl s16">{nav[i].lable}</h2>
                     </a>
                 </li>
         );

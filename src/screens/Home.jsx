@@ -25,7 +25,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 2,
             },
             duration: "1h 13min",
-            poster: "../ui/course-1.png"
+            poster: "https://placeimg.com/100/100/people?tutor"
         },
         {
             ID: 3,
@@ -37,7 +37,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 3,
             },
             duration: "42min",
-            poster: "../ui/course-1.png"
+            poster: "https://placeimg.com/100/100/people?tutor"
         },
         {
             ID: 4,
@@ -49,7 +49,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 4,
             },
             duration: "2h 12min",
-            poster: "../ui/course-1.png"
+            poster: "https://placeimg.com/100/100/people?tutor"
         }
     ]);
 
@@ -107,7 +107,7 @@ function Home() {
         /* User Live Streaming Course */
         const tutorsList = [];
         // loop tutorList
-        for(let i=0; i<12; i++){
+        for(let i=0; i<14; i++){
             tutorsList.push(
                 <button className="tutor rel" key={"tutor-live" + i}>
                     <img src={"https://placeimg.com/100/100/people?" + i } alt="profile-img"/>
@@ -177,7 +177,7 @@ function Home() {
 
             {/* User Live Streaming Course */}
             <div className="section rel">
-                <h2 className="title s20 fontb">Streaming <span className="fontn">Now</span></h2>
+                <h2 className="title s20 fontb">Streaming <span className="fontn"> Now</span></h2>
                 <div className="tutors rel flex">
                         {tutorsList}
                 </div>
@@ -186,7 +186,7 @@ function Home() {
 
             {/* Poopular Course this Weeks*/}
             <div className="section section-b rel">
-                <h2 className="title s20 fontb">Popular Course<span className="fontn">This Week</span></h2>
+                <h2 className="title s20 fontb">Popular Course<span className="fontn"> -This Week</span></h2>
                 <div className="courses rel flex">
                         {courseList}
                 </div>
@@ -195,7 +195,7 @@ function Home() {
 
             {/* Top Tutors*/}
             <div className="section section-c rel">
-                <h2 className="title s20 fontb">Top<span className="fontn">Tutors</span></h2>
+                <h2 className="title s20 fontb">Top<span className="fontn"> -Tutors</span></h2>
                 <div className="top-tutors rel flex">
                        {topTutorsList}
                 </div>

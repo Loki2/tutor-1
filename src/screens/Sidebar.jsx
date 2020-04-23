@@ -9,7 +9,7 @@ function Sidebar() {
         { lable:"Categories", slug:"cats", icon: "icon-blog" },
         { lable:"WorkShop", slug:"workshop", icon: "icon-newspaper" },
         { lable:"Tags", slug:"tags", icon: "icon-droplet" },
-        { lable:"Productive", slug:"my-product", icon: "icon-pen" },
+        { lable:"Products", slug:"my-product", icon: "icon-pen" },
         { lable:"My Course", slug:"my-course", icon: "icon-pencil" }
     ])
 
@@ -76,10 +76,18 @@ function Sidebar() {
                         User Profile <br/><span className="author s13 c777">@lokitntn_t8</span>
                     </div>
             </div>
-        </div>
 
-        
-    )
+
+            <div className="music-box flex aic jic">
+                <button className="music-profile">
+                    <img src="https://placeimg.com/100/100/people?" alt="profile-img"/>
+                </button>
+                    <div className="lbl s15 fontb c333">
+                        <strong>Musics Box</strong> <br/><span className="author s13 c777">Music&Podcast Playlist</span>
+                    </div>
+            </div>
+        </div>  
+    );
 }
 
 export default Sidebar;

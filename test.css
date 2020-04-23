@@ -1,0 +1,117 @@
+.rightbar .courses {
+    flex-direction: column;
+}
+.rightbar .courses .cols{
+    flex-direction: row;
+}
+.rightbar .courses .courses-a {
+    width: 225px;
+    height: 375px;
+    background: #e2e2e2 !important;
+    border-radius: 20px;
+}
+
+
+.rightbar .section-c .courses-right .block { 
+    width: 395px;
+    height: 235px;
+    background: #e2e2e2 !important;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+/* .rightbar .section-c .courses-right .block .course-a {
+    width: 250px;
+    height: 125px;
+    background: #e2e2e2 !important;
+    border-radius: 20px;
+    margin-top: 35px;
+} */
+.rightbar .section-c .courses-right .block .pic {
+    width: 40px;
+    height: 40px;
+    border: 2px rgb(76,175,80) solid;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+    margin: 20px;
+}
+.rightbar .courses-right .block .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.rightbar  .courses-right .block .dura {
+    top: 108px;
+    left: 14px;
+    line-height: 1;
+    padding: 9px;
+    border-radius: 10px;
+    margin: 10px;
+    background: #404040;
+}
+.rightbar  .courses-right .block .name {
+    padding: 0px;
+    margin: 0px;
+}
+.rightbar .courses-right .block .course-name {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: #444141;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.rightbar .courses {
+width: 200px;
+height: 275px;
+background: #e2e2e2 !important;
+border-radius: 20px;
+margin-top: 25px;
+}
+
+.rightbar .courses .pic {
+    width: 40px;
+    height: 40px;
+    border: 2px rgb(76,175,80) solid;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 8px;
+    margin: 15px;
+}
+.rightbar .courses .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.rightbar .courses .name {
+    margin: 0px;
+    padding: 0px;
+}
+.rightbar .courses .uname {
+    margin: 0px;
+    padding: 0px;
+}
+.rightbar .courses .dura {
+    margin-top: 79px;
+    padding: 5px;
+    background: rgb(248, 248, 249);
+    border-radius: 14px;
+    left: 25px;
+}
+.rightbar .courses .course-name {
+    bottom: -259px;
+    left: 15px;
+    right: 15px;
+    background: #2b2a2a;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.rightbar .courses {
+    flex-direction: column;
+}
+.rightbar .courses .cols {
+    flex-direction: row;
+}

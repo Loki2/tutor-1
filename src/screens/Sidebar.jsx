@@ -33,12 +33,12 @@ function Sidebar() {
         <div className="sidebar rel">
             <a href="/" className="logo bl"><img src={Logo} alt="Logo"/></a>
             
-            
+            {/* Sidebar Navigation */}
             <ul className="nav">
                 {navigation}
             </ul>
 
-
+            {/* Update Course by User_ID */}
             <div className="updated-course flex aic">
                 <div className="ico icon-firefox" />
                     <div className="lbl s15 fontb c333">
@@ -46,7 +46,7 @@ function Sidebar() {
                     </div>
             </div>
 
-    
+            {/* Status Box Show how long to take the Course */}
             <div className="stats flex">
                 <div className="stat-box aic flex">
                     <div className="ico point icon-pencil2" />
@@ -54,7 +54,6 @@ function Sidebar() {
                             <h2 className="lbl s15 fontb">1800</h2>
                             <span className="val s13 c777"> Points</span>
                         </div>
-                    
                 </div>
                 <div className="stat-box aic flex">
                     <div className="ico  complete icon-droplet" />
@@ -68,7 +67,6 @@ function Sidebar() {
 
 
             <div className="profile flex aic">
-                {/* <div className="ico icon-firefox" /> */}
                 <button className="user-profile">
                     <img src="https://placeimg.com/100/100/people?" alt="profile-img"/>
                 </button>
@@ -83,7 +81,7 @@ function Sidebar() {
                     <img src="https://placeimg.com/100/100/people?" alt="profile-img"/>
                 </button>
                     <div className="lbl s15 fontb c333">
-                        <strong>Musics Box</strong> <br/><span className="author s13 c777">Music&Podcast Playlist</span>
+                        <strong>Musics Box</strong> <br/><span className="author s13 c777">Music &Podcast Playlist</span>
                     </div>
             </div>
         </div>  

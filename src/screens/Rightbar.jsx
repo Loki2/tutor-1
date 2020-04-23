@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 
 function Rightbar() {
+
+    
     const [popularCourse] = useState([  //setPopularCourse after PopularCourse
         {
             ID: 1,
@@ -120,6 +122,17 @@ function Rightbar() {
             
             <div className="section section-c rel">
                     <h2 className="category-list s18 fontb c333">Social Media</h2>
+                        {/* {catsList} */}
+            </div>
+
+
+            <div className="section section-c rel">
+                    <h2 className="category-list s18 fontb c333">About Us</h2>
+                        {/* {catsList} */}
+            </div>
+
+            <div className="section section-c rel">
+                    <h2 className="category-list s18 fontb c333">Copyright Script</h2>
                         {/* {catsList} */}
             </div>
         </div>

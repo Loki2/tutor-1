@@ -6,9 +6,10 @@ import './css/uifont.css';
 // import Sidebar from './screens/Sidebar';
 // import Rightbar from './screens/Rightbar';
 //import Home from './screens/Home';
-import Courses from './screens/Courses';
+// import Courses from './screens/Courses';
 import Rightbar from './components/rightbar/Rightbar';
 import Sidebar from './components/sidebar/Sidebar';
+import Home from './container/home/Home';
 //import Category from './screens/Category';
 //import Product from './screens/Product';
 //import User from './screens/User';
@@ -20,8 +21,8 @@ function App() {
         <div className="App flex">
             <Sidebar /> 
             <div className="app-content">
-            {/* <Home /> */}
-            <Courses />
+            <Home />
+            {/* <Courses /> */}
             {/* <Category /> */}
             {/* <Product /> */}
             {/* <User /> */}

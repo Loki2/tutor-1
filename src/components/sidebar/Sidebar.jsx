@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Logo from '../ui/logo.png';
+import './Sidebar.css'
+import Logo from '../../ui/logo.png';
 function Sidebar() {
 
     // Create Sidebar label slug constant variable

@@ -194,6 +194,43 @@ function Home() {
             </div>
 
 
+
+
+            {/* Poopular Course this Weeks*/}
+            <div className="section section-b rel">
+                <h2 className="title s20 fontb">Course By<span className="fontn"> Category</span></h2>
+                <div className="courses rel flex">
+                        {courseList}
+                </div>
+            </div>
+
+
+
+              {/* Poopular Course this Weeks*/}
+            <div className="section section-b rel">
+                <h2 className="title s20 fontb">Popular Workshop<span className="fontn"> now</span></h2>
+                <div className="courses rel flex">
+                        {courseList}
+                </div>
+            </div>
+
+             {/* Poopular Course this Weeks*/}
+            {/* <div className="section section-b rel">
+                <h2 className="title s20 fontb">Workshop<span className="fontn"> Comming Soon</span></h2>
+                <div className="courses rel flex">
+                        {courseList}
+                </div>
+            </div> */}
+
+
+             {/* Poopular Course this Weeks*/}
+            {/* <div className="section section-b rel">
+                <h2 className="title s20 fontb">Our Product<span className="fontn"> Release Ex</span></h2>
+                <div className="courses rel flex">
+                        {courseList}
+                </div>
+            </div> */}
+
             {/* Top Tutors*/}
             <div className="section section-c rel">
                 <h2 className="title s20 fontb">Top<span className="fontn"> -Tutors</span></h2>

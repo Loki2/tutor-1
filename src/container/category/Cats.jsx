@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 //import Course1 from '../ui/code-1.jpg';
 
-function Courses() {
-
-    
+function Cats() {
     const [popularCourse] = useState([  //setPopularCourse after PopularCourse
         {
             ID: 1,
@@ -53,7 +51,6 @@ function Courses() {
             duration: "2h 12min",
             poster: "https://placeimg.com/100/100/people?tutor"
         }
-
     ]);
 
     const [topTutors] = useState([ //setTopTutor After topTutors
@@ -175,38 +172,26 @@ function Courses() {
 
         // Render Every Loop
     return (
-        <div className="courses-page rel">
+        <div className="home-page rel">
 
 
             {/* User Live Streaming Course */}
-            {/* <div className="section rel">
-                <h2 className="title s20 fontb">All Tutorial<span className="fontn"> Courses</span></h2>
+            <div className="section rel">
+                <h2 className="title s20 fontb">Categories <span className="fontn"> Storage</span></h2>
                 <div className="tutors rel flex">
                         {tutorsList}
                 </div>
-            </div> */}
+            </div>
 
 
             {/* Poopular Course this Weeks*/}
-            <div className="section section-b rel">
-                <h2 className="title s20 fontb">All Course<span className="fontn"> List</span></h2>
+            {/* <div className="section section-b rel">
+                <h2 className="title s20 fontb">Popular Course<span className="fontn"> -This Week</span></h2>
                 <div className="courses rel flex">
                         {courseList}
                 </div>
-            </div>
+            </div> */}
 
-
-            <div className="section section-b rel">
-                <div className="courses rel flex">
-                        {courseList}
-                </div>
-            </div>
-
-            <div className="section section-b rel">
-                <div className="courses rel flex">
-                        {courseList}
-                </div>
-            </div>
 
             {/* Top Tutors*/}
             {/* <div className="section section-c rel">
@@ -219,4 +204,4 @@ function Courses() {
     )
 }
 
-export default Courses;
+export default Cats;

@@ -128,12 +128,16 @@ function Rightbar() {
 
             <div className="section section-c rel">
                     <h2 className="category-list s18 fontb c333">About Us</h2>
-                        {/* {catsList} */}
+                    <ul>
+                      <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                      <li><a href="/"><span class="icon icon-phone"></span><span class="text">+856-20 2822-2732</span></a></li>
+                      <li><a href="/"><span class="icon icon-envelope"></span><span class="text">info@tutor1.com</span></a></li>
+                    </ul>
             </div>
 
             <div className="section section-c rel">
-                    <h2 className="category-list s18 fontb c333">Copyright Script</h2>
-                        {/* {catsList} */}
+                <h2 className="category-list s18 fontb c333">Alright Server</h2>
+                <p>Copyright &copy; 2020<script>document.write(new Date().getFullYear())</script>  All rights reserved | SoftSkill <i class="icon-heart text-danger" aria-hidden="true"></i>Power by <a href="https://softskill.com">Soft-Skill</a></p>
             </div>
         </div>
     )

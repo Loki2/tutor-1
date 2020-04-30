@@ -81,9 +81,9 @@ function Sidebar() {
                 <button className="music-profile">
                     <img src="https://placeimg.com/100/100/people?" alt="profile-img"/>
                 </button>
-                    <div className="lbl s15 fontb c333">
-                        <strong>Musics Box</strong> <br/><span className="author s13 c777">Music &Podcast Playlist</span>
-                    </div>
+                <div className="lbl s15 fontb c333">
+                        <strong>Media Box</strong> <br/><span className="author s13 c777">Music & Podcast Player</span>
+                </div>
             </div>
         </div>  
     );

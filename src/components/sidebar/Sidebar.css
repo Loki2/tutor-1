@@ -40,16 +40,16 @@
 }
 
 .sidebar .nav li a.on{
-    border-left: 2px rgb(72,148,86) solid;
-    color: rgb(72,148,86);
+    border-left: 2px #15B5FA solid;
+    color: #15B5FA;
     line-height: 1px;
 }
 
 
 .sidebar .nav li a:hover,
 .sidebar .nav li a:active {
-    border-left: 2px rgb(72,148,86) solid;
-    color: rgb(72,148,86);
+    border-left: 2px #15B5FA solid;
+    color: #15B5FA;
     line-height: 1px;
 
 
@@ -68,7 +68,7 @@
 .sidebar .updated-course .ico {
     font-size: 24px;
     padding: 15px;
-    background: #53A254;
+    background: #15B5FA;
     color: #fff;
     border-radius: 20px;
     margin-right: 10px;
@@ -110,7 +110,7 @@
 .sidebar .profile .ico {
     font-size: 24px;
     padding: 15px;
-    background: #53A254;
+    background: #15B5FA;
     color: #fff;
     border-radius: 20px;
     margin-right: 10px;
@@ -118,7 +118,7 @@
 /* .sidebar .profile .lbl {} */
 
 .sidebar .profile .user-profile {
-    border: 2px #53A254 solid;
+    border: 1px #15B5FA solid;
     background: #ddd;
     width: 60px;
     height: 60px;
@@ -139,7 +139,7 @@
     background: #e9ffea
 }
 .sidebar .music-box .music-profile {
-    border: 1px #53A254 solid;
+    border: 1px #15B5FA solid;
     background: #ddd;
     width: 80px;
     height: 80px;

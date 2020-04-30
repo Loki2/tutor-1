@@ -3,10 +3,10 @@
  */
 
 .home-page {
-    /* background: #f2f3f2; */
-    border-radius: 15px;
-    margin: 10px 0px;
-    padding: 0px 30px;
+       /* background: #f2f3f2; */
+       border-radius: 15px;
+       margin: 10px 0px;
+       padding: 0px 10px;
 }
 .home-page .section {
     padding: 0px;
@@ -17,7 +17,7 @@
 }
 /* .home-page .section .tutors{} */
 .section .tutors .tutor {
-    border: 2px #53A254 solid;
+    border: 1px #79C072 solid;
     background: #ddd;
     width: 70px;
     height: 70px;
@@ -38,7 +38,7 @@
     margin-top: 50px;
 }
 /* .home-page .section-b .courses{} */
-.section-b .courses a{
+.section-b .courses a {
     margin-right: 50px;
     text-decoration: none; 
 }
@@ -59,7 +59,7 @@
 .section-b .courses .block .user .pic{
     width: 40px;
     height: 40px;
-    border: 2px rgb(76,175,80) solid;
+    border: 1px #15B5FA solid;
     border-radius: 50%;
     padding: 3px;
     margin-right: 10px;
@@ -79,7 +79,7 @@
 .section-b .courses .block .dura {
     top: 90px;
     left: 25px;
-    background: #53A254;
+    background: rgb(168, 98, 6);
     line-height: 1;
     padding: 2px;
     border-radius: 10px;
@@ -101,8 +101,12 @@
     bottom: 20px;
     left: 20px;
     right: 15px;
-    background: #2e2e2e;
+    /* background: #a09a9a; */
+   
     border-radius: 10px;
+}
+.section-b .courses .block .course-name a {
+    color: #15B5FA;
 }
 .top-tutors {
     flex-wrap: wrap;
@@ -114,7 +118,7 @@
 .section .user-block .pic {
     width: 40px;
     height: 40px;
-    border: 2px rgb(76,175,80) solid;
+    border: 1px #15B5FA solid;
     border-radius: 50%;/* 
     ***************SIDEBAR***************************
      */
@@ -138,4 +142,74 @@
 .section .user-block .meta .uname{
     padding: 0px;
     margin: 0px;
+}
+
+/* 
+************************Style home-page WorkShop Section**********************
+ */
+
+.section-workshop {
+    margin-top: 50px;
+}
+.section-workshop .course a {
+    margin-right: 50px;
+    text-decoration: none; 
+}
+.section-workshop .course .block {
+    width: 250px;
+    height: 170px;
+    background: #e2e2e2 !important;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+.section-workshop .course .block .user {
+    padding: 20px;
+    margin: 8px;
+    margin-top: -40px;
+    z-index: 1;
+}
+.section-workshop .course .block .user .pic {
+    width: 35px;
+    height: 35px;
+    border: 1px #15B5FA solid;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+}
+.section-workshop .course .block .user .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.section-workshop .course .block .dura {
+    top: 50px;
+    left: 50px;
+    background: rgb(168, 98, 6);
+    line-height: 1;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.33);
+}
+.section-workshop .course .block .dura .dur {
+    top: 90px;
+    left: 15px;
+    color: cornsilk;
+    line-height: 1;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.section-workshop .course .block .course-name {
+    bottom: 10px;
+    left: 10px;
+    right: 75px;
+    /* background: #181717; */
+    border-radius: 10px;
+}
+.section-workshop .course .block .course-name a {
+    color: #15B5FA;
 }

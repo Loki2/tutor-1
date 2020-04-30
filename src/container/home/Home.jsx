@@ -26,7 +26,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 2,
             },
             duration: "1h 13min",
-            poster: "https://placeimg.com/100/100/people?tutor"
+            poster: "https://placeimg.com/256/480/arch?tutor-" + 2
         },
         {
             ID: 3,
@@ -38,7 +38,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 3,
             },
             duration: "42min",
-            poster: "https://placeimg.com/100/100/people?tutor"
+            poster: "https://placeimg.com/256/480/arch?tutor-" + 3
         },
         {
             ID: 4,
@@ -50,7 +50,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 4,
             },
             duration: "2h 12min",
-            poster: "https://placeimg.com/100/100/people?tutor"
+            poster: "https://placeimg.com/256/480/arch?tutor-" + 4
         }
     ]);
 
@@ -105,6 +105,59 @@ function Home() {
         }
     ])
 
+
+
+    const [workshopCourse] = useState([  //setPopularCourse after PopularCourse
+        {
+            ID: 1,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 1,
+            },
+            duration: "58min",
+            poster: "https://placeimg.com/100/100/people?"
+        },
+        {
+            ID: 2,
+            title:"Create Startup from begurry and Caffee With Startbug",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 2,
+            },
+            duration: "1h 13min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        },
+        {
+            ID: 3,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 3,
+            },
+            duration: "42min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        },
+        {
+            ID: 4,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 4,
+            },
+            duration: "2h 12min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        }
+    ]);
+
         /* User Live Streaming Course */
         const tutorsList = [];
         // loop tutorList
@@ -134,7 +187,6 @@ function Home() {
                                     <div className="meta rel">
                                     <h2 className="s15 name fontb c333">{popularCourse[i].tutor.name}</h2>
                                     <span className="s13 uname fontn c333">@{popularCourse[i].tutor.username}</span>
-                                    {/* <h2 className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</h2> */}
                                     </div>
                             </div>
 
@@ -171,7 +223,41 @@ function Home() {
             );
         }
 
-        // Render Every Loop
+
+
+
+        /*Popular Course Of The Week*/
+        const workshopList = [];
+        // loop CourseList
+        for(let i=0; i< workshopCourse.length; i++){
+            workshopList.push(
+                <a href="/" className="course rel" key={"workshop-course" + i}>
+                    <div className="block" style={{
+                        background:"#e2e2e2 url(" + workshopCourse[i].poster + ") no-repeat center"
+                    }}>
+                            <div className="user aic abs flex">
+                                    <div className="pic">
+                                        <img src={workshopCourse[i].tutor.dp} className="bl" alt="profile"/>
+                                    </div>
+                                    <div className="meta rel">
+                                    <h2 className="s15 name fontb c333">{workshopCourse[i].tutor.name}</h2>
+                                    {/* <span className="s13 uname fontn c333">@{workshopCourse[i].tutor.username}</span> */}
+                                    {/* <h2 className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</h2> */}
+                                    </div>
+                            </div>
+
+                            <div className="dura abs">
+                                <a href="/" className="s13 dur fontb cfff">{workshopCourse[i].duration}</a>
+                            </div>
+                            
+                            <div className="course-name abs">
+                                <a href="/" className="s15 course-text fontb cfff">{workshopCourse[i].title}</a>
+                            </div>
+                    </div>
+                </a>
+            );
+        }
+    // Render Every Loop
     return (
         <div className="home-page rel">
 
@@ -194,42 +280,47 @@ function Home() {
             </div>
 
 
+            {/* Poopular Course this Weeks*/}
+            <div className="section section-workshop rel">
+                <h2 className="title s20 fontb">Course By<span className="fontn"> Category</span></h2>
+                <div className="courses rel flex">
+                        {workshopList}
+                </div>
+            </div>
 
 
             {/* Poopular Course this Weeks*/}
-            <div className="section section-b rel">
-                <h2 className="title s20 fontb">Course By<span className="fontn"> Category</span></h2>
+            <div className="section section-workshop rel">
+                <h2 className="title s20 fontb">My Favourite<span className="fontn"> Course</span></h2>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
                 </div>
             </div>
 
-
-
-              {/* Poopular Course this Weeks*/}
-            <div className="section section-b rel">
+            {/* Poopular Course this Weeks*/}
+            <div className="section section-workshop rel">
                 <h2 className="title s20 fontb">Popular Workshop<span className="fontn"> now</span></h2>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
                 </div>
             </div>
 
-             {/* Poopular Course this Weeks*/}
-            {/* <div className="section section-b rel">
-                <h2 className="title s20 fontb">Workshop<span className="fontn"> Comming Soon</span></h2>
+            {/* Poopular Course this Weeks*/}
+            <div className="section section-workshop rel">
+                <h2 className="title s20 fontb">Workshop By<span className="fontn"> Category</span></h2>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
                 </div>
-            </div> */}
+            </div>
 
-
-             {/* Poopular Course this Weeks*/}
-            {/* <div className="section section-b rel">
-                <h2 className="title s20 fontb">Our Product<span className="fontn"> Release Ex</span></h2>
+            {/* Poopular Course this Weeks*/}
+            <div className="section section-workshop rel">
+                <h2 className="title s20 fontb">My Favourite<span className="fontn"> Workshop</span></h2>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
                 </div>
-            </div> */}
+            </div>
+
 
             {/* Top Tutors*/}
             <div className="section section-c rel">

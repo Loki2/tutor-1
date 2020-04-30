@@ -1,8 +1,59 @@
 import React, { useState } from 'react';
+import './Course.css';
 //import Course1 from '../ui/code-1.jpg';
 
 function Courses() {
-
+    
+    const [workshopCourse] = useState([  //setPopularCourse after PopularCourse
+        {
+            ID: 1,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 1,
+            },
+            duration: "58min",
+            poster: "https://placeimg.com/100/100/people?"
+        },
+        {
+            ID: 2,
+            title:"Create Startup from begurry and Caffee With Startbug",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 2,
+            },
+            duration: "1h 13min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        },
+        {
+            ID: 3,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 3,
+            },
+            duration: "42min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        },
+        {
+            ID: 4,
+            title:"Learning how to create model in 102 min",
+            tutor: {
+                ID: 1,
+                name: "Lanna Marelnna", 
+                username:"lannamarln",
+                dp: "https://placeimg.com/100/100/people?tutor-" + 4,
+            },
+            duration: "2h 12min",
+            poster: "https://placeimg.com/100/100/people?tutor"
+        }
+    ]);
     
     const [popularCourse] = useState([  //setPopularCourse after PopularCourse
         {
@@ -173,48 +224,74 @@ function Courses() {
             );
         }
 
+
+        /*Popular Course Of The Week*/
+        const workshopList = [];
+        // loop CourseList
+        for(let i=0; i< workshopCourse.length; i++){
+            workshopList.push(
+                <a href="/" className="course rel" key={"workshop-course" + i}>
+                    <div className="block" style={{
+                        background:"#e2e2e2 url(" + workshopCourse[i].poster + ") no-repeat center"
+                    }}>
+                            <div className="user aic abs flex">
+                                    <div className="pic">
+                                        <img src={workshopCourse[i].tutor.dp} className="bl" alt="profile"/>
+                                    </div>
+                                    <div className="meta rel">
+                                    <h2 className="s15 name fontb c333">{workshopCourse[i].tutor.name}</h2>
+                                    {/* <span className="s13 uname fontn c333">@{workshopCourse[i].tutor.username}</span> */}
+                                    {/* <h2 className="s13 uname fontn cfff">@{popularCourse[i].tutor.username}</h2> */}
+                                    </div>
+                            </div>
+
+                            <div className="dura abs">
+                                <a href="/" className="s13 dur fontb cfff">{workshopCourse[i].duration}</a>
+                            </div>
+                            
+                            <div className="course-name abs">
+                                <a href="/" className="s15 course-text fontb cfff">{workshopCourse[i].title}</a>
+                            </div>
+                    </div>
+                </a>
+            );
+        }
         // Render Every Loop
     return (
         <div className="courses-page rel">
 
-
-            {/* User Live Streaming Course */}
-            {/* <div className="section rel">
-                <h2 className="title s20 fontb">All Tutorial<span className="fontn"> Courses</span></h2>
-                <div className="tutors rel flex">
-                        {tutorsList}
-                </div>
-            </div> */}
-
-
-            {/* Poopular Course this Weeks*/}
-            <div className="section section-b rel">
-                <h2 className="title s20 fontb">All Course<span className="fontn"> List</span></h2>
+            <div className="section section-workshop rel">
+                <h2 className="title s20 fontb">Course By<span className="fontn"> Category</span></h2>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
+                </div>
+            </div>
+            <div className="section section-workshop rel">
+                <h3 className="title s20 fontn">My Favourite</h3>
+                <div className="courses rel flex">
+                        {workshopList}
+                </div>
+            </div>
+            <div className="section section-workshop rel">
+                <h3 className="title s20 fontn">My Favourite</h3>
+                <div className="courses rel flex">
+                        {workshopList}
+                </div>
+            </div>
+            <div className="section section-workshop rel">
+                <h3 className="title s20 fontn">My Favourite</h3>
+                <div className="courses rel flex">
+                        {workshopList}
                 </div>
             </div>
 
-
-            <div className="section section-b rel">
+            <div className="section section-workshop rel">
+                <h3 className="title s20 fontn">My Favourite</h3>
                 <div className="courses rel flex">
-                        {courseList}
+                        {workshopList}
                 </div>
             </div>
 
-            <div className="section section-b rel">
-                <div className="courses rel flex">
-                        {courseList}
-                </div>
-            </div>
-
-            {/* Top Tutors*/}
-            {/* <div className="section section-c rel">
-                <h2 className="title s20 fontb">Top<span className="fontn"> -Tutors</span></h2>
-                <div className="top-tutors rel flex">
-                       {topTutorsList}
-                </div>
-            </div> */}
         </div>
     )
 }

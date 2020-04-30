@@ -136,7 +136,7 @@ function Rightbar() {
             </div>
 
             <div className="section section-c rel">
-                <h2 className="category-list s18 fontb c333">Alright Server</h2>
+                {/* <h2 className="category-list s18 fontb c333">*****************************</h2> */}
                 <p>Copyright &copy; 2020<script>document.write(new Date().getFullYear())</script>  All rights reserved | SoftSkill <i class="icon-heart text-danger" aria-hidden="true"></i>Power by <a href="https://softskill.com">Soft-Skill</a></p>
             </div>
         </div>

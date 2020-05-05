@@ -4,10 +4,10 @@
  */
  .rightbar {
     flex: 1 1;
-    padding: 12px 0px;
-    margin: 0px 15px;
-    width: 275px;
-    /* margin-left: 275px; */
+    padding: 13px 6px;
+    margin: 12px 0px;
+    margin-left: 0px;
+    
 }
 .rightbar .search-box {
     margin: 0px 0px;

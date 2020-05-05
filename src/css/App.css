@@ -4,8 +4,9 @@
 }
 
 .app-content {
-    flex: 2;
-    padding: 20px 0px;
+    flex: 3 1;
+    padding: 0px 10px;
+    margin: 15px 5px;
 }
 
 /* 
@@ -14,7 +15,8 @@
 .player {
     width: 100%;
     background: #000;
-    height: 35%;
+    height: 40%;
+    margin-top: 40px;
 }
 .player .video {
     width: 100%;

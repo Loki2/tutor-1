@@ -31,7 +31,8 @@ a {
 .rel{ position: relative ;}
 .aic { align-items: center; }
 .jic { justify-content: center; }
-.bl { display: block;}
+.bl { display: block; }
+.ibl {display: inline-block; }
 .noul { text-decoration: none; }
 .c333 { color: #333; }
 .c777 { color: #777; }

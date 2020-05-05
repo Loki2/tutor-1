@@ -94,8 +94,7 @@ function Course_Detail() {
                     </div>
                     <div className="section section-b rel">
                         <h2 className="title s20 fontb">Course<span className="fontn"> Video Detail</span></h2>
-                            {/* Status Box Show how long to take the Course */}
-                            <div className="course-video flex">
+                            <div className="course-video aic flex">
                             {courseVideo}
                             </div>
                     </div>
@@ -120,9 +119,114 @@ function Course_Detail() {
                             </div>
                            </div>
                         </div>
-                        <button className="icon-pen s24 vol"/>
-                        <button className="icon-pen s24 fs"/>
+                        <button className="icon-quill s24 vol"/>
+                        <button className="icon-droplet s24 fs"/>
                     </div>
+                </div>
+
+                <div className="extra-block rel flex">
+                    <div className="chat rel">
+                        <div className="section section-b rel">
+                            <h2 className="title s20 fontb">Quick<span className="fontn"> Chats</span></h2>
+                                <div className="messages aic flex">
+                                    <div className="bubble rel">
+                                        <h1 className="txt ibl fontn s13 c333">I am new babie</h1>
+                                    </div>
+                                    <div className="bubble rel">
+                                        <h1 className="txt ibl fontn s13 c333">I Love this course...!</h1>
+                                    </div>
+                                    <div className="bubble bubble-mine rel">
+                                        <h1 className="txt ibl fontn s13 c333">Hey, ?</h1>
+                                    </div>
+                                    <div className="bubble bubble-mine rel">
+                                        <h1 className="txt ibl fontn s13 c333">Cozy, bla bla... you gotta face newLine </h1>
+                                    </div>
+                                    <div className="bubble rel">
+                                        <h1 className="txt ibl fontn s13 c333">I asked to create new gen model size...</h1>
+                                    </div>
+                                    <div className="bubble rel">
+                                        <h1 className="txt ibl fontn s13 c333">Yep, gotta clean bubble bean</h1>
+                                    </div>
+                                    <div className="bubble bubble-mine rel">
+                                        <h1 className="txt ibl fontn s13 c333">@!Taroz, blean dot oop..@</h1>
+                                    </div>
+                                    <div className="bubble rel">
+                                        <h1 className="txt ibl fontn s13 c333">I asked to create new gen model size...</h1>
+                                    </div>
+                                    <div className="bubble bubble-mine rel">
+                                        <input type="text" className="text s15 fontn c3333" placeholder="feeling fear to push..."/>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div className="watch-now rel">
+                        <div className="tooltip abs s13 fontb cfff">86 Live Now</div>
+                        <div className="section section-b rel">
+                        <h2 className="title s20 fontb">Now <span className="fontn"> Watching</span></h2>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-1" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">John Deo 
+                                <br/> <span className="s13 uname fontn c777">@John_D</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-2" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">Robert D, Juniur 
+                                <br/> <span className="s13 uname fontn c777"> @iron_man</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-3" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">Christ Evant <
+                                    br/> <span className="s13 uname fontn c777">  @capt_american</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-4" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">Christ Hemwerd 
+                                    <br/> <span className="s13 uname fontn c777">  @thor_t8</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-4" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">Christ Hemwerd 
+                                    <br/> <span className="s13 uname fontn c777">  @thor_t8</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="you aic rel flex">
+                            <div className="pic">
+                                <img src="https://placeimg.com/100/100/people?guest-4" className="bl" alt="profile"/>
+                            </div>
+                            <div className="lbl meta rel">
+                                <h2 className="s15 name fontb c333">Christ Hemwerd 
+                                    <br/> <span className="s13 uname fontn c777">  @thor_t8</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                 </div>
             </div>
         </div>

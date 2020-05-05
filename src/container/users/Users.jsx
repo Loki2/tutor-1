@@ -182,24 +182,6 @@ function User() {
                         {tutorsList}
                 </div>
             </div>
-
-
-            {/* Poopular Course this Weeks*/}
-            {/* <div className="section section-b rel">
-                <h2 className="title s20 fontb">Popular Course<span className="fontn"> -This Week</span></h2>
-                <div className="courses rel flex">
-                        {courseList}
-                </div>
-            </div> */}
-
-
-            {/* Top Tutors*/}
-            {/* <div className="section section-c rel">
-                <h2 className="title s20 fontb">Top<span className="fontn"> -Tutors</span></h2>
-                <div className="top-tutors rel flex">
-                       {topTutorsList}
-                </div>
-            </div> */}
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
-//import Course1 from '../ui/code-1.jpg';
+import Course1 from '../../assets/images/Lover_zen.png'
+
 
 function Home() {
     const [popularCourse] = useState([  //setPopularCourse after PopularCourse
@@ -14,7 +15,7 @@ function Home() {
                 dp: "https://placeimg.com/100/100/people?tutor-" + 1,
             },
             duration: "58min",
-            poster: "https://placeimg.com/100/100/people?"
+            poster: Course1
         },
         {
             ID: 2,
@@ -174,9 +175,10 @@ function Home() {
         // loop CourseList
         for(let i=0; i< popularCourse.length; i++){
             courseList.push(
+                // "#e2e2e2 url(" + popularCourse[i].poster + ") no-repeat center"
                 <a href="/" className="course rel" key={"popular-course" + i}>
                     <div className="block" style={{
-                        background:"#e2e2e2 url(" + popularCourse[i].poster + ") no-repeat center"
+                        background: require('../../assets/images/Lover_zen.png')
                     }}>
 
 

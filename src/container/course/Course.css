@@ -111,7 +111,7 @@
 .course-detail .tutor .pic{
     width: 85px;
     height: 85px;
-    border-radius: 10px;
+    border-radius: 25px;
     background: #eee;
     margin-right: 10px;
 }
@@ -120,14 +120,14 @@
     height: 100%;
     border-radius: 25%;
 }
-.course-detail .tutor .meta {}
+/* .course-detail .tutor .meta {} */
 .course-detail .tutor .meta .name{
     padding: 0px 10px;
     margin: -5px 0px;
 }
-.course-detail .tutor .meta .uname{}
+/* .course-detail .tutor .meta .uname{} */
 
-.course-detail .course-meta{}
+/* .course-detail .course-meta{} */
 .course-detail .course-meta .title{
     margin-top: 10px;
     margin-bottom: 15px;
@@ -151,19 +151,89 @@
     box-sizing: border-box;
     margin-right: 10px;
 }
-.course-video a .meta{}
-.course-video a .meta {}
+/* .course-video a .meta{}
+.course-video a .meta {} */
 .course-video a .meta .lbl{
     margin-top: 20px;
 }
 .course-video a .meta .dur{
     margin-top: -10px;
 }
-.course-video a:hover {
-    /* background: #D9EDD7; */
-}
+/* .course-video a:hover {} */
 
 .course-preview{
-    flex: 2;
-    margin-left: 25px;
+    flex: 1;
+    /* margin-left: 15px; */
 }
+
+.extra-block {
+    flex-direction: row;
+    padding: 5px 0px;
+}
+.chat {
+    flex: 1;
+    margin-right: 20px;
+}
+.chat .messages {
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}
+.chat .messages .bubble {
+    align-self: flex-start;
+    width: 100%;
+    margin: -15px 0px;
+} 
+.chat .messages .bubble .txt{
+    background: #dacaca73;
+    line-height: 1px;
+    padding: 15px;
+    border-radius: 20px 20px 20px 0px;
+}
+.chat .messages .bubble-mine{
+    text-align: right;
+}
+.chat .messages .bubble-mine .txt{
+    background: #181717f7;
+    line-height: 1px;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px 20px 0px 20px !important;
+}
+.chat .messages .bubble-mine input{
+    line-height: 0px;
+    padding: 5px;
+    color: rgb(20, 20, 20);
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px !important;
+}
+.watch-now {
+    flex: 1;
+    margin-left: 15px;
+}
+.watch-now .tooltip {
+    background: #15B5FA;
+    top: 36px;
+    right: 0px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+/* .watch-now .you {}  */
+.watch-now .you .pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+    background: #eee;
+}
+.watch-now .you .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+/* .watch-now .you .meta{} */
+.watch-now .you .meta .name{
+    margin: -10px;
+}
+/* .watch-now .you .meta .uname{} */
